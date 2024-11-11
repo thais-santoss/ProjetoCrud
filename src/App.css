@@ -1,0 +1,114 @@
+body {
+/* No App.css */
+  background-image: url('./assets/depositphotos_105322416-stock-illustration-books-and-reading.jpg');
+  background-size: cover;
+  background-position: center;
+
+
+ 
+  font-family: 'Georgia', serif; /* Fonte serifada */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Garante que o fundo cubra toda a altura da página */
+}
+
+.app {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid #4b0082; /* Borda lilás escuro */
+  border-radius: 12px; /* Bordas arredondadas mais suaves */
+  background-color: rgb(223, 146, 223); /* Caixa principal branca */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.app:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #4f4f4f; /* Texto escuro */
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Tamanho maior para o título */
+  font-weight: bold; /* Fonte em negrito */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra no texto */
+}
+
+input, textarea {
+  width: calc(100% - 24px); /* Ajusta largura para incluir padding */
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #6b5e8d; /* Borda lilás escuro */
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #5a4b7d; /* Borda ao focar em lilás mais escuro */
+  outline: none; /* Remove contorno padrão */
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aaa; /* Cor do placeholder */
+  font-style: italic; /* Estilo itálico */
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #4b0082; /* Verde escuro */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra no botão */
+}
+
+button:hover {
+  background-color: #8fbc8f; /* Verde claro ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento de tamanho */
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse; /* Para juntar as bordas */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #4b0082; /* Linha de separação lilás escuro */
+}
+
+th {
+  background-color: #6b5e8d; /* Cabeçalho em lilás escuro */
+  color: white; /* Texto do cabeçalho em branco */
+  font-weight: bold; /* Negrito no cabeçalho */
+}
+
+tr:hover {
+  background-color: #d3d3c9; /* Mudança de fundo ao passar o mouse */
+}
+
+h3 {
+  margin: 0;
+  color: #4f4f4f; /* Cor do título do livro */
+  font-weight: bold; /* Título em negrito */
+}
+
+p {
+  margin: 5px 0 10px;
+  color: #555; /* Cor do texto da opinião */
+  font-size: 0.95em; /* Tamanho ligeiramente menor */
+}
+
+button + button {
+  margin-left: 10px; /* Espaço entre botões */
+}
+
